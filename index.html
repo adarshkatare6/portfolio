@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adarsh Katare | AI &amp; ML Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Adarsh Katare - AI &amp; ML Developer. Specialize in building intelligent systems, LLM fine-tuning, and scalable web applications.">
+  <meta name="keywords"
+    content="Adarsh Katare, AI &amp; ML Developer, ML Engineer, Full Stack Developer, IIIT Bhopal, PyTorch, React, LLM Fine-tuning, FastAPI, Portfolio">
+  <meta name="author" content="Adarsh Katare">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adarsh Katare | AI &amp; ML Developer">
+  <meta property="og:description"
+    content="Building intelligent systems and scalable applications. Browse my recent machine learning and full-stack projects.">
+  <meta property="og:image" content="https://adarshkatare6.github.io/adarsh-portfolio/assets/portfolio-screenshot.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Adarsh Katare | AI &amp; ML Developer">
+  <meta property="twitter:description"
+    content="Building intelligent systems and scalable applications. Browse my recent machine learning and full-stack projects.">
+
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Fixed Three.js Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- FLOATING SOCIALS TOP LEFT -->
+  <div class="top-left-socials">
+    <a href="https://www.linkedin.com/in/adarsh-katare/" target="_blank" rel="noopener" title="LinkedIn">
+      <img src="image/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/adarshkatare6" target="_blank" rel="noopener" title="GitHub">
+      <img src="image/Github.png" alt="GitHub">
+    </a>
+  </div>
+
+  <!-- FLOATING NAVBAR -->
+  <header class="navbar-container">
+    <nav class="navbar" id="main-nav">
+      <ul class="nav-links">
+        <li class="nav-item active" id="nav-item-home">
+          <a href="#home" title="Home">
+            <i data-lucide="home"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="nav-item-about">
+          <a href="#about" title="About / Stats">
+            <i data-lucide="user"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="nav-item-projects">
+          <a href="#projects" title="Projects">
+            <i data-lucide="code-2"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="nav-item-experience">
+          <a href="#experience" title="Experience">
+            <i data-lucide="briefcase"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="nav-item-skills">
+          <a href="#skills" title="Skills">
+            <i data-lucide="cpu"></i>
+          </a>
+        </li>
+        <li class="nav-item" id="nav-item-contact">
+          <a href="#contact" title="Contact">
+            <i data-lucide="mail"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-divider"></div>
+      <button class="theme-toggle" id="theme-btn" title="Toggle Theme">
+        <i data-lucide="sun" id="theme-icon"></i>
+      </button>
+    </nav>
+
+    <!-- Floating Animated Pill below navbar -->
+    <div class="animated-text-pill">
+      <span class="dot"></span>
+      Learning. Building. Improving.
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">ナマステ</div>
+          <h1 class="hero-title">ADARSH KATARE</h1>
+          <p class="hero-subtitle">AI &amp; ML Developer</p>
+          <p class="hero-description">Teaching machine <span class="word-predict"> to Predict, Generate and Build</span>
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-buttons">
+            <a href="https://drive.google.com/file/d/1qAu0QvLHJBDnGEzGEPVUu6D8lh8BhroR/view?usp=drive_link"
+              target="_blank" rel="noopener" class="hero-btn primary">
+              <i data-lucide="file-text"></i> Resume
+            </a>
+            <a href="#projects" class="hero-btn secondary">
+              <i data-lucide="folder-git-2"></i> Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <svg class="circuit-overlay" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- Node circles -->
+            <circle cx="20" cy="20" r="1.5" fill="var(--accent)" opacity="0.6" />
+            <circle cx="80" cy="20" r="1.5" fill="var(--accent)" opacity="0.6" />
+            <circle cx="50" cy="80" r="1.5" fill="var(--accent)" opacity="0.6" />
+            <circle cx="85" cy="75" r="1.5" fill="var(--accent)" opacity="0.6" />
+
+            <!-- Circuit Connections -->
+            <path d="M 20 20 L 50 50 L 50 80" stroke="var(--accent)" stroke-width="0.3" fill="none" opacity="0.3" />
+            <path d="M 80 20 L 50 50" stroke="var(--accent)" stroke-width="0.3" fill="none" opacity="0.3" />
+            <path d="M 50 50 L 85 75" stroke="var(--accent)" stroke-width="0.3" fill="none" opacity="0.3" />
+            <path d="M 15 55 L 35 55 L 50 80" stroke="var(--accent)" stroke-width="0.3" fill="none" opacity="0.3" />
+          </svg>
+          <div class="cyber-sphere"></div>
+          <div class="profile-image-container">
+            <img src="image/adarsh1.jpg" alt="Adarsh Katare">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION FOR ANCHORING AND BIO -->
+  <section id="about"
+    style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 50px 0;">
+    <div class="container">
+      <div class="about-education-grid">
+        <!-- About Me Column -->
+        <div class="about-col">
+          <div class="section-header">
+            <h2 class="section-title">ABOUT ME</h2>
+          </div>
+          <div class="about-content">
+            <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 24px; line-height: 1.8;">
+              I am a B.Tech Electronics &amp; Communication Engineering student at <strong>IIIT Bhopal (Graduating
+                2027)</strong>.
+              As an enthusiastic developer, I balance rigorous engineering logic with modern full-stack implementation
+              to
+              design, fine-tune, and deploy AI models.
+            </p>
+            <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
+              From architecting multimodal RAG pipelines using large language models to optimizing microservices
+              latency, I
+              build tools that bridge the gap between complex algorithms and sleek user interfaces.
+            </p>
+            <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8;">
+              I can contribute to fullstack also :)
+            </p>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="education-col">
+          <div class="section-header">
+            <h2 class="section-title">EDUCATION</h2>
+          </div>
+          <div class="education-timeline">
+            <!-- Card 1 -->
+            <div class="education-card">
+              <h3 class="education-institution">Indian Institute of Information Technology, Bhopal</h3>
+              <p class="education-degree1">Bachelor of Technology – Electronics and Communication Engineering</p>
+              <p class="education-duration">September 2023 – May 2027</p>
+              <p class="education-grade">CGPA: 7.76</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="education-card">
+              <h3 class="education-institution">Shirinbai netrawala School, Tumsar</h3>
+              <p class="education-degree">Class 12th – 93.4%</p>
+              <p class="education-degree">Class 10th – 92.6%</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="education-card">
+              <h3 class="education-institution">Relevant Coursework</h3>
+              <p class="education-courses">Data Structures &amp; Algorithms, OOP, DBMS, Operating Systems, Computer
+                Networks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS SECTION — UNO CARD TWIST -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">RECENT PROJECTS</h2>
+        <!-- <p
+          style="font-family: var(--font-body); font-size: 13px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-top: 12px; font-weight: 600;">
+          Hover cards to flip &amp; reveal details</p> -->
+      </div>
+
+      <div class="projects-carousel-container">
+        <button class="carousel-nav-btn prev" id="projects-prev" aria-label="Previous Project">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <div class="projects-carousel-viewport">
+          <div class="projects-track" id="projects-track">
+
+            <!-- CARD 1: HealthifyAI (far left, smallest, RED) -->
+            <article class="uno-card" id="project-healthify">
+              <div class="uno-card-inner">
+                <!-- Front Face -->
+                <div class="uno-card-front card-pink">
+                  <div class="project-mockup-wrapper">
+                    <img src="image/healthifyai.jpg" class="project-mockup-img" alt="HealthifyAI">
+                  </div>
+                  <div class="project-card-number">1</div>
+                  <div class="project-card-title">HealthifyAI</div>
+                </div>
+                <!-- Back Face -->
+                <div class="uno-card-back">
+                  <div class="uno-header">
+                    <span class="uno-badge">AI Chatbot</span>
+                    <span class="uno-symbol">H</span>
+                  </div>
+                  <div class="uno-content">
+                    <h3 class="uno-title">HealthifyAI</h3>
+                    <div class="uno-tech-stack">
+                      <span class="uno-tech">Mistral-7B</span>
+                      <span class="uno-tech">Flask</span>
+                      <span class="uno-tech">React/Vite</span>
+                      <span class="uno-tech">MongoDB</span>
+                    </div>
+                    <ul class="uno-details">
+                      <li>Architected AI food product analysis with LoRA fine-tuning on Mistral-7B.</li>
+                      <li>Created multimodal OCR + NLP normalization flow boosting text accuracy by ~35%.</li>
+                      <li>Deployed full-stack app on Vercel &amp; Render with JWT reducing unauthorized access by 100%.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="uno-actions">
+                    <a href="https://github.com/adarshkatare6/Heathiscan-AI" target="_blank" rel="noopener"
+                      class="uno-btn">
+                      <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="https://healthify-ai-zeta.vercel.app/" target="_blank" rel="noopener" class="uno-btn">
+                      <i data-lucide="external-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 2: Quality Enhancer (second left, medium, BLUE) -->
+            <article class="uno-card" id="project-quality-enhancer">
+              <div class="uno-card-inner">
+                <!-- Front Face -->
+                <div class="uno-card-front card-orange">
+                  <div class="project-mockup-wrapper">
+                    <img src="image/qualityenhancer.jpg" class="project-mockup-img" alt="Quality Enhancer">
+                  </div>
+                  <div class="project-card-number">2</div>
+                  <div class="project-card-title">Quality Enhancer</div>
+                </div>
+                <!-- Back Face -->
+                <div class="uno-card-back">
+                  <div class="uno-header">
+                    <span class="uno-badge">Image AI</span>
+                    <span class="uno-symbol">Q</span>
+                  </div>
+                  <div class="uno-content">
+                    <h3 class="uno-title">Quality Enhancer</h3>
+                    <div class="uno-tech-stack">
+                      <span class="uno-tech">ESRGAN</span>
+                      <span class="uno-tech">PyTorch</span>
+                      <span class="uno-tech">Streamlit</span>
+                      <span class="uno-tech">HuggingFace</span>
+                    </div>
+                    <ul class="uno-details">
+                      <li>AI super-resolution tool enhancing image quality up to 4× using ESRGAN model.</li>
+                      <li>Deployed on Hugging Face Spaces with Streamlit for instant browser-based access.</li>
+                      <li>Supports JPEG/PNG/WebP with real-time enhancement preview.</li>
+                    </ul>
+                  </div>
+                  <div class="uno-actions">
+                    <a href="https://github.com/adarshkatare6" target="_blank" rel="noopener" class="uno-btn">
+                      <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="https://huggingface.co/spaces/adarsh6/Quality-EnhancerAI" target="_blank" rel="noopener"
+                      class="uno-btn">
+                      <i data-lucide="external-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 3: Resume Screenee (CENTER — biggest & tallest, GREEN) -->
+            <article class="uno-card" id="project-resume-screenee">
+              <div class="uno-card-inner">
+                <!-- Front Face -->
+                <div class="uno-card-front card-blue">
+                  <div class="project-mockup-wrapper">
+                    <img src="image/resume-screener.png" class="project-mockup-img" alt="Resume Screenee">
+                  </div>
+                  <div class="project-card-number">3</div>
+                  <div class="project-card-title">Resume Screenee</div>
+                </div>
+                <!-- Back Face -->
+                <div class="uno-card-back">
+                  <div class="uno-header">
+                    <span class="uno-badge">NLP · Resume AI</span>
+                    <span class="uno-symbol">R</span>
+                  </div>
+                  <div class="uno-content">
+                    <h3 class="uno-title">Resume Screenee</h3>
+                    <div class="uno-tech-stack">
+                      <span class="uno-tech">Python</span>
+                      <span class="uno-tech">spaCy</span>
+                      <span class="uno-tech">FastAPI</span>
+                      <span class="uno-tech">React</span>
+                    </div>
+                    <ul class="uno-details">
+                      <li>AI-powered resume screening tool that ranks candidates based on job description similarity.</li>
+                      <li>Extracts skills, experience &amp; qualifications using NLP with 88% match accuracy.</li>
+                      <li>Generates structured candidate shortlist reports for HR teams.</li>
+                    </ul>
+                  </div>
+                  <div class="uno-actions">
+                    <a href="https://github.com/adarshkatare6" target="_blank" rel="noopener" class="uno-btn">
+                      <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="#" class="uno-btn" onclick="alert('Coming soon!'); return false;">
+                      <i data-lucide="external-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 4: Sign Language AI (second right, medium, YELLOW) -->
+            <article class="uno-card" id="project-signlanguage">
+              <div class="uno-card-inner">
+                <!-- Front Face -->
+                <div class="uno-card-front card-teal">
+                  <div class="project-mockup-wrapper">
+                    <img src="image/sign-language.jpg" class="project-mockup-img" alt="Sign Language AI">
+                  </div>
+                  <div class="project-card-number">4</div>
+                  <div class="project-card-title">Sign Language AI</div>
+                </div>
+                <!-- Back Face -->
+                <div class="uno-card-back">
+                  <div class="uno-header">
+                    <span class="uno-badge">CV + Deep Learning</span>
+                    <span class="uno-symbol">L</span>
+                  </div>
+                  <div class="uno-content">
+                    <h3 class="uno-title">Sign Language AI</h3>
+                    <div class="uno-tech-stack">
+                      <span class="uno-tech">OpenCV</span>
+                      <span class="uno-tech">TensorFlow</span>
+                      <span class="uno-tech">CNN-LSTM</span>
+                      <span class="uno-tech">Docker</span>
+                    </div>
+                    <ul class="uno-details">
+                      <li>Built automated sign language tracking achieving 94% accuracy on custom datasets.</li>
+                      <li>Optimized inference pipeline reducing real-time latency by ~19%.</li>
+                      <li>Containerized with Docker; deployed to Hugging Face Spaces with Streamlit.</li>
+                    </ul>
+                  </div>
+                  <div class="uno-actions">
+                    <a href="https://github.com/adarshkatare6/Sign-Language-Recognizer-AI" target="_blank" rel="noopener"
+                      class="uno-btn">
+                      <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="#" class="uno-btn" onclick="alert('Coming soon!'); return false;">
+                      <i data-lucide="external-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 5: Go Opensource Contributor (far right, smallest, PURPLE) -->
+            <article class="uno-card" id="project-opensource">
+              <div class="uno-card-inner">
+                <!-- Front Face -->
+                <div class="uno-card-front card-purple">
+                  <div class="project-mockup-wrapper">
+                    <img src="image/open-source.png" class="project-mockup-img" alt="Go Opensource Contributor">
+                  </div>
+                  <div class="project-card-number">5</div>
+                  <div class="project-card-title">Go Opensource</div>
+                </div>
+                <!-- Back Face -->
+                <div class="uno-card-back">
+                  <div class="uno-header">
+                    <span class="uno-badge">Open Source</span>
+                    <span class="uno-symbol">G</span>
+                  </div>
+                  <div class="uno-content">
+                    <h3 class="uno-title">Go Opensource</h3>
+                    <div class="uno-tech-stack">
+                      <span class="uno-tech">Go</span>
+                      <span class="uno-tech">GitHub Actions</span>
+                      <span class="uno-tech">REST API</span>
+                      <span class="uno-tech">CLI</span>
+                    </div>
+                    <ul class="uno-details">
+                      <li>Active contributor to Go open-source projects with merged PRs.</li>
+                      <li>Built CLI tools and REST integrations for developer productivity.</li>
+                      <li>Participated in GSSoC &amp; Hacktoberfest with 10+ accepted contributions.</li>
+                    </ul>
+                  </div>
+                  <div class="uno-actions">
+                    <a href="https://github.com/adarshkatare6" target="_blank" rel="noopener" class="uno-btn">
+                      <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="#" class="uno-btn" onclick="alert('Coming soon!'); return false;">
+                      <i data-lucide="external-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+        <button class="carousel-nav-btn next" id="projects-next" aria-label="Next Project">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION — WATER WAVE TIMELINE -->
+  <section class="experience" id="experience"
+    style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">EXPERIENCE</h2>
+      </div>
+
+      <div class="timeline-wrapper">
+        <!-- SVG WAVY LINE -->
+        <div class="timeline-wave-svg-container">
+          <svg width="100" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none" id="timeline-svg"
+            style="height: 100%; width: 100%;">
+            <!-- Base wavy path -->
+            <path d="M50,0 Q65,100 35,200 T50,400 T65,600 T50,800" class="timeline-wave-path-bg" id="timeline-path-bg">
+            </path>
+            <!-- Animated scrolling wave path -->
+            <path d="M50,0 Q65,100 35,200 T50,400 T65,600 T50,800" class="timeline-wave-path-active"
+              id="timeline-path-active"></path>
+          </svg>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- ITEM 1: IIT BHU (LEFT) -->
+          <div class="timeline-item left" id="exp-iitbhu">
+            <div class="timeline-card-wrapper">
+              <article class="timeline-card">
+                <div class="timeline-company">IIT BHU · Varanasi</div>
+                <h3 class="timeline-role">Machine Learning Research Intern</h3>
+                <div class="timeline-date">May 2025 – Jun 2025</div>
+                <ul class="timeline-bullets">
+                  <li>Designed high-precision inverse kinematics solutions for 17-DOF robotic leg, attaining 96.27%
+                    accuracy across diverse gait trajectories</li>
+                  <li>Built ANN and ES-RNN architectures to infer joint configurations, cutting inference latency by 18%
+                    and maintaining prediction errors within 1.5 degrees.</li>
+                  <li>Constructed advanced foot trajectories via B-spline and minimum jerk curves, improving stride
+                    continuity by 23%.</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="timeline-node-container">
+              <div class="timeline-node" id="node-1"></div>
+            </div>
+            <div></div> <!-- empty grid space -->
+          </div>
+
+          <!-- ITEM 2: HYPWEB SOLUTIONS (RIGHT) -->
+          <div class="timeline-item right" id="exp-hypweb">
+            <div></div> <!-- empty grid space -->
+            <div class="timeline-node-container">
+              <div class="timeline-node" id="node-2"></div>
+            </div>
+
+            <div class="timeline-card-wrapper">
+              <article class="timeline-card">
+                <div class="timeline-company">HYPWEB SOLUTIONS LLP</div>
+                <h3 class="timeline-role">AI &amp; MERN Developer Intern</h3>
+                <div class="timeline-date">March 2025 - April 2025</div>
+                <ul class="timeline-bullets">
+                  <li>Developed a Linux command correction chatbot by fine-tuning Meta LLaMA models on Hugging Face
+                    datasets, achieving 94.4% accuracy in suggesting valid shell commands across diverse user inputs.
+                  </li>
+                  <li>Explored Google Colab and cloud servers for NLP and efficient model hosting with scalability upto
+                    12.5%</li>
+                  <li>Achieved 94.4% accuracy on shell command suggestions.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- ITEM 3: SPARK CLUB CV LEAD (LEFT) -->
+          <div class="timeline-item left" id="exp-spark">
+            <div class="timeline-card-wrapper">
+              <article class="timeline-card">
+                <div class="timeline-company">SPARK Club, IIIT Bhopal</div>
+                <h3 class="timeline-role">Computer Vision Lead</h3>
+                <div class="timeline-date">November 2025 - Present</div>
+                <ul class="timeline-bullets">
+                  <li>Led Deep Learning and Computer Vision workshop for 100+ students, focusing on practical AI/ML
+                    applications</li>
+                  <li>Mentored and guided junior members in designing and developing innovative AI- and Computer
+                    Vision–based projects, fostering a strong research and development culture</li>
+                  <li>Played a key role in conceptualizing, building, and showcasing 10+ innovative projects during the
+                    college's annual technical fest</li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="timeline-node-container">
+              <div class="timeline-node" id="node-3"></div>
+            </div>
+            <div></div> <!-- empty grid space -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & TOOLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">SKILLS &amp; TOOLS</h2>
+      </div>
+
+      <!-- Skills Marquee — 4 rows, alternating speed & direction -->
+      <div class="skills-marquee-wrapper">
+
+        <!-- ROW 1 — FAST, left direction -->
+        <div class="skills-track-outer">
+          <div class="skills-track track-fast">
+            <div class="skill-pill"><img src="image/Python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-pill"><img src="image/pytorch.png" alt="PyTorch"><span>PyTorch</span></div>
+            <div class="skill-pill"><img src="image/TensorFlow.png" alt="TensorFlow"><span>TensorFlow</span></div>
+            <div class="skill-pill"><img src="image/fastapi.png" alt="FastAPI"><span>FastAPI</span></div>
+            <div class="skill-pill"><img src="image/docker.png" alt="Docker"><span>Docker</span></div>
+            <div class="skill-pill"><img src="image/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+            <div class="skill-pill"><img src="image/Git.png" alt="Git"><span>Git & GitHub</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="skill-pill"><img src="image/Python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-pill"><img src="image/pytorch.png" alt="PyTorch"><span>PyTorch</span></div>
+            <div class="skill-pill"><img src="image/TensorFlow.png" alt="TensorFlow"><span>TensorFlow</span></div>
+            <div class="skill-pill"><img src="image/fastapi.png" alt="FastAPI"><span>FastAPI</span></div>
+            <div class="skill-pill"><img src="image/docker.png" alt="Docker"><span>Docker</span></div>
+            <div class="skill-pill"><img src="image/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+            <div class="skill-pill"><img src="image/Git.png" alt="Git"><span>Git & GitHub</span></div>
+          </div>
+        </div>
+
+        <!-- ROW 2 — SLOW, right direction (reverse) -->
+        <div class="skills-track-outer">
+          <div class="skills-track track-slow track-reverse">
+            <div class="skill-pill"><img src="image/sklearn.png" alt="Scikit-Learn"><span>Scikit-Learn</span></div>
+            <div class="skill-pill"><img src="image/opencv.png" alt="OpenCV"><span>OpenCV</span></div>
+            <div class="skill-pill"><img src="image/pandas.png" alt="Pandas"><span>Pandas</span></div>
+            <div class="skill-pill"><img src="image/numpy.png" alt="NumPy"><span>NumPy</span></div>
+            <div class="skill-pill"><img src="image/keras.png" alt="Keras"><span>Keras</span></div>
+            <div class="skill-pill"><img src="image/SQL.png" alt="SQL"><span>SQL</span></div>
+            <div class="skill-pill"><img src="image/cuda.png" alt="CUDA"><span>CUDA</span></div>
+            <!-- Duplicate -->
+            <div class="skill-pill"><img src="image/sklearn.png" alt="Scikit-Learn"><span>Scikit-Learn</span></div>
+            <div class="skill-pill"><img src="image/opencv.png" alt="OpenCV"><span>OpenCV</span></div>
+            <div class="skill-pill"><img src="image/pandas.png" alt="Pandas"><span>Pandas</span></div>
+            <div class="skill-pill"><img src="image/numpy.png" alt="NumPy"><span>NumPy</span></div>
+            <div class="skill-pill"><img src="image/keras.png" alt="Keras"><span>Keras</span></div>
+            <div class="skill-pill"><img src="image/SQL.png" alt="SQL"><span>SQL</span></div>
+            <div class="skill-pill"><img src="image/cuda.png" alt="CUDA"><span>CUDA</span></div>
+          </div>
+        </div>
+
+        <!-- ROW 3 — FAST, left direction -->
+        <div class="skills-track-outer">
+          <div class="skills-track track-fast">
+            <div class="skill-pill"><img src="image/C++.png" alt="C++"><span>C++</span></div>
+            <div class="skill-pill"><img src="image/C.jpeg" alt="C"><span>C</span></div>
+            <div class="skill-pill"><img src="image/js.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-pill"><img src="image/HTML.png" alt="HTML5"><span>HTML5</span></div>
+            <div class="skill-pill"><img src="image/CSS.png" alt="CSS3"><span>CSS3</span></div>
+            <div class="skill-pill"><img src="image/matplotlib.png" alt="Matplotlib"><span>Matplotlib</span></div>
+            <div class="skill-pill"><img src="image/seaborn.png" alt="Seaborn"><span>Seaborn</span></div>
+            <!-- Duplicate -->
+            <div class="skill-pill"><img src="image/C++.png" alt="C++"><span>C++</span></div>
+            <div class="skill-pill"><img src="image/C.jpeg" alt="C"><span>C</span></div>
+            <div class="skill-pill"><img src="image/js.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill-pill"><img src="image/HTML.png" alt="HTML5"><span>HTML5</span></div>
+            <div class="skill-pill"><img src="image/CSS.png" alt="CSS3"><span>CSS3</span></div>
+            <div class="skill-pill"><img src="image/matplotlib.png" alt="Matplotlib"><span>Matplotlib</span></div>
+            <div class="skill-pill"><img src="image/seaborn.png" alt="Seaborn"><span>Seaborn</span></div>
+          </div>
+        </div>
+
+        <!-- ROW 4 — SLOW, right direction (reverse) -->
+        <div class="skills-track-outer">
+          <div class="skills-track track-slow track-reverse">
+            <div class="skill-pill"><img src="image/jupyter-notebook.png" alt="Jupyter"><span>Jupyter</span></div>
+            <div class="skill-pill"><img src="image/Python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-pill"><img src="image/pytorch.png" alt="PyTorch"><span>PyTorch</span></div>
+            <div class="skill-pill"><img src="image/docker.png" alt="Docker"><span>Docker</span></div>
+            <div class="skill-pill"><img src="image/Git.png" alt="Git"><span>Git & GitHub</span></div>
+            <div class="skill-pill"><img src="image/fastapi.png" alt="FastAPI"><span>FastAPI</span></div>
+            <div class="skill-pill"><img src="image/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+            <!-- Duplicate -->
+            <div class="skill-pill"><img src="image/jupyter-notebook.png" alt="Jupyter"><span>Jupyter</span></div>
+            <div class="skill-pill"><img src="image/Python.png" alt="Python"><span>Python</span></div>
+            <div class="skill-pill"><img src="image/pytorch.png" alt="PyTorch"><span>PyTorch</span></div>
+            <div class="skill-pill"><img src="image/docker.png" alt="Docker"><span>Docker</span></div>
+            <div class="skill-pill"><img src="image/Git.png" alt="Git"><span>Git & GitHub</span></div>
+            <div class="skill-pill"><img src="image/fastapi.png" alt="FastAPI"><span>FastAPI</span></div>
+            <div class="skill-pill"><img src="image/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- Achievements Subheading -->
+      <div class="section-header" style="margin-top: 80px; margin-bottom: 40px;">
+        <h2 class="section-title">ACHIEVEMENTS</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i data-lucide="trophy"></i>
+          </div>
+          <div class="achievement-info">
+            <h4 class="achievement-title">SIH 2nd Runner-up</h4>
+            <p class="achievement-desc">Secured 2nd Runner-up at Smart India Hackathon for designing a scalable
+              real-world technical architecture.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i data-lucide="sword"></i>
+          </div>
+          <div class="achievement-info">
+            <h4 class="achievement-title">LeetCode Knight</h4>
+            <p class="achievement-desc">Achieved Leetcode Knight Badge. Max Rating 1864, positioning in the top 5.51% of
+              coders globally.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i data-lucide="star"></i>
+          </div>
+          <div class="achievement-info">
+            <h4 class="achievement-title">3-Star CodeChef</h4>
+            <p class="achievement-desc">Peak Rating 1697. Global rank 764 out of 35,000+ competitors in Starters
+              Contest.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i data-lucide="terminal"></i>
+          </div>
+          <div class="achievement-info">
+            <h4 class="achievement-title">Codeforces Specialist</h4>
+            <p class="achievement-desc">Peak rating 1427. Finished under 2800 in highly competitive Div2 rounds.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFILE / SOCIAL LINKS SECTION -->
+  <section class="profiles-section" id="profiles">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 60px; margin-top: 0;">
+        <h2 class="section-title">PROFILE</h2>
+      </div>
+
+      <div class="profiles-grid">
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/adarsh-katare-b1ba852ab/" target="_blank" rel="noopener"
+          class="profile-card" id="profile-linkedin">
+          <div class="profile-icon-wrapper" style="background: #e8f0fe;">
+            <img src="image/linkedin.png" alt="LinkedIn">
+          </div>
+          <span class="profile-label">LinkedIn</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/adarshkatare6" target="_blank" rel="noopener" class="profile-card"
+          id="profile-github">
+          <div class="profile-icon-wrapper" style="background: #f0f0f0;">
+            <img src="image/Github.png" alt="GitHub">
+          </div>
+          <span class="profile-label">GitHub</span>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/adarshkatare/" target="_blank" rel="noopener" class="profile-card"
+          id="profile-leetcode">
+          <div class="profile-icon-wrapper" style="background: #f0f0f0;">
+            <img src="image/Leetcode.png" alt="LeetCode">
+          </div>
+          <span class="profile-label">LeetCode</span>
+        </a>
+
+        <!-- CodeChef -->
+        <a href="https://www.codechef.com/users/param_ek" target="_blank" rel="noopener" class="profile-card"
+          id="profile-codechef">
+          <div class="profile-icon-wrapper" style="background: #fdf5e8;">
+            <img src="image/Codechef.png" alt="CodeChef">
+          </div>
+          <span class="profile-label">CodeChef</span>
+        </a>
+
+        <!-- Codeforces -->
+        <a href="https://codeforces.com/profile/adarshkatare6" target="_blank" rel="noopener" class="profile-card"
+          id="profile-codeforces">
+          <div class="profile-icon-wrapper" style="background: #eef0fb;">
+            <img src="image/Codeforces.png" alt="Codeforces">
+          </div>
+          <span class="profile-label">Codeforces</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact"
+    style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">GET IN TOUCH</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's Collaborate</h3>
+          <p>Have an interesting machine learning project, a full-stack role, or simply want to connect? Hit me up. I am
+            always open to discussing new technical opportunities and research endeavors.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span class="contact-detail-label">Email</span>
+                <a href="mailto:adarshkatare6@gmail.com" class="contact-detail-val">adarshkatare6@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span class="contact-detail-label">Phone</span>
+                <span class="contact-detail-val">+91 73876 70992</span>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-detail-text">
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-val">Bhopal, Madhya Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/adarshkatare6" target="_blank" rel="noopener" class="social-link"
+              title="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adarsh-katare/" target="_blank" rel="noopener" class="social-link"
+              title="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/u/adarsh_katare6/" target="_blank" rel="noopener" class="social-link"
+              title="LeetCode">
+              <i data-lucide="code"></i>
+            </a>
+            <a href="https://codeforces.com/profile/adarshkatare6" target="_blank" rel="noopener" class="social-link"
+              title="Codeforces">
+              <i data-lucide="terminal"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST" id="contact-form-element">
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea"
+              placeholder="Describe your project, team, or opportunity..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Message
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">&copy; 2026 Adarsh Katare. Built with precision for production hosting.</p>
+        <a href="#home" class="footer-back-to-top">
+          Back to top
+          <i data-lucide="arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icon Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Main Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
